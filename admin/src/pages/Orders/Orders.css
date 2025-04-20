@@ -1,0 +1,113 @@
+.order-item {
+    display: grid;
+    grid-template-columns: 60px 2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #ff6f61;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0;
+    font-size: 15px;
+    background-color: #fff7f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .order-item:hover {
+    box-shadow: 0 6px 16px rgba(255, 111, 97, 0.2);
+  }
+  
+  .order-item img {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .order-item-food,
+  .order-item-name {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .order-item-name {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 16px;
+  }
+  
+  .order-item-address {
+    margin-bottom: 8px;
+    line-height: 1.4;
+    color: #666;
+  }
+  
+  .order-item-phone {
+    color: #444;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+.order-item select {
+    background-color: #fff;
+    border: 1.5px solid tomato;
+    border-radius: 8px;
+    width: max(12vw, 140px);
+    padding: 10px 12px;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: border 0.2s, box-shadow 0.2s;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='tomato' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+}
+
+@media (max-width: 900px) {
+    .order-item {
+      grid-template-columns: 50px 1.5fr 1fr 1fr;
+      gap: 16px;
+      padding: 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .order-item {
+      grid-template-columns: 50px 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "img name"
+        "img address"
+        "img status";
+      padding: 18px;
+      font-size: 13px;
+    }
+  
+    .order-item img {
+      grid-area: img;
+    }
+  
+    .order-item-name {
+      grid-area: name;
+      margin: 0;
+    }
+  
+    .order-item-address {
+      grid-area: address;
+      margin: 4px 0;
+    }
+  
+    .order-item select {
+      grid-area: status;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
