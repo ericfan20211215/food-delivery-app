@@ -13,6 +13,32 @@ Also developed with **React**, the admin interface is tailored for content and o
 ### **Backend**
 The backend manages how data is handled and how different parts of the app connect behind the scenes. It uses a set of organized controllers and middleware to handle tasks like login, cart updates, and orders. All data is stored and accessed through **MongoDB**.
 
+# Project Demo
+
+### **Frontend**
+
+- Browse dishes by category
+- User account creation and login
+- Add/remove items from cart
+- Place orders with simulated payment
+- View order history and status
+
+<img src="Food_Del_Pics/f1.png" alt="Frontend 1" width="600" />
+<img src="Food_Del_Pics/f2.png" alt="Frontend 2" width="600" />
+<img src="Food_Del_Pics/f3.png" alt="Frontend 3" width="600" />
+<img src="Food_Del_Pics/f4.png" alt="Frontend 4" width="600" />
+
+### **Admin**
+
+- Manage dishes: add, edit, delete items
+- Organize categories and menu structure
+- Track and update order status
+- View all user orders in one dashboard
+  
+<img src="Food_Del_Pics/a1.png" alt="Admin 1" width="600" />
+<img src="Food_Del_Pics/a2.png" alt="Admin 2" width="600" />
+<img src="Food_Del_Pics/a3.png" alt="Admin 3" width="600" />
+
 # Setup Instructions
 
 ### Step 1: Clone the repository
@@ -66,3 +92,4 @@ cd ../admin
 ```bash
 npm run dev
 ```
+
