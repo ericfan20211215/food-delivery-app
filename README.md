@@ -37,7 +37,13 @@ JWT_SECRET="your_jwt_secret_here"
 STRIPE_SECRET_KEY="your_stripe_secret_key_here"
 ```
 
-### Step 4: Start the backend server
+### Step 4: Set up your MongoDB database
+Create a database in MongoDB Atlas or use your own MongoDB instance. After that, update your .env file with your connection string:
+```bash
+MONGODB_URL="your_mongodb_connection_string"
+```
+
+### Step 5: Start the backend server
 ```bash
 cd backend
 ```
@@ -45,7 +51,7 @@ cd backend
 npm run server
 ```
 
-### Step 5: Start the frontend server
+### Step 6: Start the frontend server
 ```bash
 cd ../frontend
 ```
@@ -53,7 +59,7 @@ cd ../frontend
 npm run dev
 ```
 
-### Step 6: Start the admin panel server
+### Step 7: Start the admin panel server
 ```bash
 cd ../admin
 ```
